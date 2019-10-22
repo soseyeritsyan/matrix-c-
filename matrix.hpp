@@ -10,13 +10,11 @@ class Matrix
         int **matrix;
     public:
         Matrix();
-	    Matrix (int, int);
+	Matrix (int, int);
         Matrix (int, int, int **);
         Matrix( const Matrix& );
-        Matrix& operator=(Matrix &);
-	    void set_row ( int r );
-	    void set_col ( int c );
-	    void set_matrix_element ( int i, int j, int m );
+        Matrix & operator=(Matrix &);
+	void set_matrix_element ( int i, int j, int m );
         int get_row ();
         int get_col ()
         int get_matrix_element ( int i, int j )
