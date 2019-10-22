@@ -59,34 +59,7 @@ Matrix::Matrix( const Matrix & a)
         }
     }
 }
-//Function where we change row's count
-Matrix::void set_row ( int r )
-{
-    row = r;
-    matrix = new int* [row];
-    for ( int i = 0; i < row; i++) {
-        matrix[i] = new int[col];
-    }
-    for (int i = 0; i < a.row; i++ ) {
-        for (int j = 0; j < a.col; j++) {
-            matrix[i][j] = a.matrix[i][j];
-        }
-    }
-}
-//Function where we change column's count
-Matrix::void set_col ( int c )
-{
-    col = c;
-    matrix = new int* [row];
-    for ( int i = 0; i < row; i++ ) {
-        matrix[i] = new int[col];
-    }
-    for (int i = 0; i < a.row; i++ ) {
-        for (int j = 0; j < a.col; j++) {
-            matrix[i][j] = a.matrix[i][j];
-        }
-    }
-}
+
 // This function replaces the i,j element of matrix with m
 Matrix::void set_matrix_element ( int i, int j, int m );
 {
